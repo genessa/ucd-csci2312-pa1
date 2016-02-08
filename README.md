@@ -1,8 +1,8 @@
-*CSCI 2312
+**CSCI 2312**
 
-PA1
+**PA1**
 
-Genessa Moodie*
+**Genessa Moodie**
 
 Program to compute area of triangle from three points.
 
