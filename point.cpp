@@ -3,7 +3,15 @@
 //
 
 #include <iostream>
+#include <cmath>
 #include "Point.h"
+
+Point::Point(double newX, double newY, double newZ)
+{
+    x = newX;
+    y = newY;
+    z = newZ;
+}
 
 void Point::setX(double newX) {
     x = newX;
@@ -28,6 +36,13 @@ double Point::getY() const {
 
 double Point::getZ() const {
     return z;
+}
+
+const double Point::distanceTo(const Point &pointA, const Point& pointB) {
+    double distance;
+    distance = sqrt( pow((pointB.x-pointA.x),2.0) + pow((pointB.y-pointA.y),2.0) + pow((pointB.z-pointA.z),2.0) );
+    return distance;
+
 }
 
 Point::~Point() {

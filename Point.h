@@ -12,7 +12,7 @@ private:
 public:
     // Constructors
     Point();                      // default constructor
-    Point(double x, double y, double z);    // two-argument constructor
+    Point(double newX, double newY, double newZ);    // three-argument constructor
 
     // Mutator methods
     void setX(double newX);
@@ -24,7 +24,9 @@ public:
     double getY() const;
     double getZ() const;
 
-    // Destructor cuz why not
+    static const double distanceTo(const Point& pointA, const Point& pointB);
+
+    // Destructor because reasons
     ~Point();
 };
 
